@@ -10,7 +10,7 @@ g = open(file_with_terms, 'r')
 
 # LOAD IN terms
 for x in g:
-    f.append('http://www.lowes.com/Search={0}?langId=-1&N=0&newSearch=true&Ntt={}&view=list'.format(urllib.quote_plus(x.split(',')[column_with_terms].split('\n')[0])))
+    f.append('http://www.website.com/Search={0}?langId=-1&N=0&newSearch=true&Ntt={}&view=list'.format(urllib.quote_plus(x.split(',')[column_with_terms].split('\n')[0])))
     f123.append(urllib.quote_plus(x.split(',')[column_with_terms].split('\n')[0]))
     
 f123 = np.asarray(f123)[1:]                             # Store a copy of the term
